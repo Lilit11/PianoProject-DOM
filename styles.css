@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#putAnote {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    width: 150px;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem;
+    margin-top: 10px;
+
+}
+
+#putAnote:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+#firstPart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#secondPart {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#sign {
+    position: absolute;
+    margin-left: 100px;
+
+}
+
+.note {
+    margin: auto;
+    width: 1000px;
+    height: 50px;
+    border: 3px solid;
+    border-bottom-color: white;
+
+}
+
+.piano {
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 170px;
+    font-size: 20px;
+    color: black;
+}
+
+.key {
+    width: 40px;
+    height: 200px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.key.white {
+    background: white;
+    border-left: none;
+}
+
+.key.black {
+    background: black;
+    width: 30px;
+    height: 120px;
+    position: absolute;
+    margin-left: -8px;
+    z-index: 1;
+}
+
+.key.white:first-child {
+    border: 1px solid #ccc;
+}
+
+
+.key[data-note="C#"] {
+    left: 30px;
+}
+
+.key[data-note="D#"] {
+    left: 70px;
+}
+
+.key[data-note="F#"] {
+    left: 150px;
+}
+
+.key[data-note="G#"] {
+    left: 190px;
+}
+
+.key[data-note="A#"] {
+    left: 230px;
+}
+
+
+
+#doSign {
+    background-color: transparent;
+    position: absolute;
+    display: none; 
+    top: 210px;
+    right: 950px;
+} 
+#reSign {
+    background-color: transparent;
+    position: absolute;
+    top: 180px;
+    right: 850px;
+    display: none; 
+}
+#miSign {
+    background-color: transparent;
+    position: absolute;
+    top: 150px;
+    right: 750px;
+    display: none; 
+} 
+#faSign {
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    right: 650px;
+    display: none; 
+}
+#solSign {
+    background-color: transparent;
+    position: absolute;
+    bottom: 40px;
+    right: 550px;
+    display: none; 
+}
+#lyaSign {
+    background-color: transparent;
+    position: absolute;
+    bottom: 70px;
+    right: 450px;
+    display: none; 
+}
+
+#siSign {
+    background-color: transparent;
+    position: absolute;
+    bottom: 100px;
+    right: 350px;
+    display: none; 
+}
